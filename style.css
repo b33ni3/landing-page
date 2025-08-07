@@ -1,63 +1,75 @@
-body{
+body {
     margin: 0;
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     display: flex;
     flex-direction: column;
 }
 
-
-.A_superman{
-    width: 100px;
-    flex-shrink: 0;
-}
-
-.header{
+/* === Shared Container === */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    gap: 1em;
     justify-content: space-between;
     align-items: center;
+}
+
+/* === Header === */
+.header {
     background-color: #1F2937;
-    padding: 10px 400px;
+    padding: 10px 0;
+}
+
+.left-header {
+    font-size: 24px;
+    color: #F9FAF8;
 }
 
 .right-header {
     display: flex;
     gap: 16px;
-    align-items: center; 
-    margin: 0; 
-    padding: 0; 
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
 }
 
-.hero{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+a {
+    text-decoration: none;
+    color: #E5E7EB;
+}
+
+/* === Hero Section === */
+.hero {
     background-color: #1F2937;
     min-height: 300px;
-    padding: 10px 400px;
+    padding: 40px 0;
 }
 
-.hero_container{
+.hero-left {
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 
-.hero_main_text{
+.hero_main_text {
     font-size: 48px;
     color: #f9faf9;
     font-weight: 900;
     width: 500px;
 }
 
-.sub_text{
+.sub_text {
     width: 500px;
     font-size: 18px;
-    color:#f9faf9;
+    color: #f9faf9;
 }
 
-.hero_img{
+.hero_img {
     min-height: 200px;
     min-width: 500px;
     background-color: lightgray;
@@ -66,33 +78,22 @@ body{
     align-items: center;
 }
 
-
-ul{
-    list-style: none;
-    font-size: 18px;
-}
-
-a{
-    text-decoration: none;
-    color: #E5E7EB;
-}
-
 button {
-  cursor: pointer;
-  padding: 8px 16px;
-  border-radius: 8px;
-  width: 100px;
-  background-color: rgb(26, 85, 247);
-
-}
-
-.signup1{
-    margin-top: 10px;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 8px;
+    width: 100px;
+    background-color: rgb(26, 85, 247);
     color: white;
     font-weight: 900;
 }
 
-.center-container{
+.signup1 {
+    margin-top: 10px;
+}
+
+/* === Center Section === */
+.center-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -100,63 +101,46 @@ button {
     height: 400px;
 }
 
-.center-inn-container{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.info{
-    max-width: 200px;
-}
-
-img{
-    width: 150px;
-    height: 150px;
-    flex-shrink: 0;
-}
-
-.quote-container{
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #E5E7EB;
-    min-height: 200px;
-    justify-content: center;
-    align-items: center;
-}
-
-.action-container{
-    background-color: white;
-    height: 200px;
-}
-
-.left-header{
-    font-size: 24px;
-    color: #F9FAF8;
-}
-
-.dog{
-    border: 4px solid navy;
-    border-radius: 25px;
-}
-
-.center-text{
+.center-text {
     font-size: 36px;
     color: #1F2937;
     font-weight: 900;
     margin: 20px;
 }
 
-.quote-container{
+.center-inn-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.info {
+    max-width: 200px;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
+}
+
+.dog {
+    border: 4px solid navy;
+    border-radius: 25px;
+}
+
+/* === Quote Section === */
+.quote-container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 500px;
+    background-color: #E5E7EB;
 }
 
-.quote{
+.quote {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -166,7 +150,7 @@ img{
     max-width: 800px;
 }
 
-.quote-by{
+.quote-by {
     display: flex;
     justify-content: flex-end;
     font-size: 36px;
@@ -174,7 +158,8 @@ img{
     max-width: 800px;
 }
 
-.action-container{
+/* === Call to Action Section === */
+.action-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -183,7 +168,7 @@ img{
     background-color: white;
 }
 
-.action-inn-cont{
+.action-inn-cont {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -192,14 +177,20 @@ img{
     background-color: #3882F6;
 }
 
-.action-text-container{
+.action-text-container {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     color: white;
 }
 
-.signup2{
+.signup2-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup2 {
     margin: 15px;
     color: white;
     font-weight: 900;
@@ -208,11 +199,12 @@ img{
     background-color: #3882F6;
 }
 
-.action-text{
-    font-weight: bold;
+.action-text,
+.signup-text {
+    font-size: 24px;
 }
 
-.action-text,
-.signup-text{
-    font-size: 24px;
+.A_superman {
+    width: 100px;
+    flex-shrink: 0;
 }
