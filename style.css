@@ -13,6 +13,8 @@ body{
 
 .header{
     display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
     justify-content: space-between;
     align-items: center;
     background-color: #1F2937;
@@ -29,10 +31,11 @@ body{
 
 .hero{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     background-color: #1F2937;
-    height: 300px;
+    min-height: 300px;
     padding: 10px 400px;
 }
 
@@ -55,8 +58,8 @@ body{
 }
 
 .hero_img{
-    height: 200px;
-    width: 500px;
+    min-height: 200px;
+    min-width: 500px;
     background-color: lightgray;
     display: flex;
     justify-content: center;
@@ -99,8 +102,8 @@ button {
 
 .center-inn-container{
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
-
 }
 
 .info{
@@ -115,8 +118,9 @@ img{
 
 .quote-container{
     display: flex;
+    flex-wrap: wrap;
     background-color: #E5E7EB;
-    height: 200px;
+    min-height: 200px;
     justify-content: center;
     align-items: center;
 }
@@ -145,19 +149,21 @@ img{
 
 .quote-container{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    min-height: 500px;
 }
 
 .quote{
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-start;
     font-style: italic;
     font-size: 36px;
     color: #1F2937;
-    width: 800px;
+    max-width: 800px;
 }
 
 .quote-by{
@@ -165,11 +171,12 @@ img{
     justify-content: flex-end;
     font-size: 36px;
     font-weight: 900;
-    width: 800px;
+    max-width: 800px;
 }
 
 .action-container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     height: 350px;
